@@ -5,8 +5,7 @@ config.h
 secrets.h
 .env
 .env.*
-!.env.example
-config.local.php
+*.local.php
 server/config.php
 
 # =========================
@@ -25,7 +24,7 @@ arduino_cache_*/
 *.tmp
 
 # =========================
-# PlatformIO files, if used
+# PlatformIO files, if used later
 # =========================
 .pio/
 .pioenvs/
@@ -33,7 +32,7 @@ arduino_cache_*/
 libdeps/
 
 # =========================
-# PHP / Composer, if used
+# PHP / Composer, if used later
 # =========================
 vendor/
 composer.phar
@@ -57,8 +56,6 @@ database/backup/
 data/raw/
 logs/
 sd-card-data/
-*.csv
-!results/*.csv
 
 # =========================
 # Office / Temporary Files
