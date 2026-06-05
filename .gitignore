@@ -1,69 +1,81 @@
-# Prerequisites
-*.d
+# =========================
+# Secrets / Local Config
+# =========================
+config.h
+secrets.h
+.env
+.env.*
+!.env.example
+config.local.php
+server/config.php
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
+# =========================
+# Arduino / ESP32 Build Files
+# =========================
 build/
-Build/
-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
 .cache/
+arduino_build_*/
+arduino_cache_*/
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.d
+*.tmp
+
+# =========================
+# PlatformIO files, if used
+# =========================
+.pio/
+.pioenvs/
+.piolibdeps/
+libdeps/
+
+# =========================
+# PHP / Composer, if used
+# =========================
+vendor/
+composer.phar
+*.log
+
+# =========================
+# Database / Local Data
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+database/dump/
+database/backup/
+*.sql
+!database/schema.sql
+!database/sample-data.sql
+
+# =========================
+# Raw experiment / SD card logs
+# =========================
+data/raw/
+logs/
+sd-card-data/
+*.csv
+!results/*.csv
+
+# =========================
+# Office / Temporary Files
+# =========================
+~$*.docx
+*.bak
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
